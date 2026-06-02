@@ -152,7 +152,7 @@ function Write-UpdateLog {
 
 function Get-Sha256 {
     param([string]$Path)
-    return (Get-FileHash -LiteralPath $Path -Algorithm SHA256).Hash.ToUpperInvariant()
+    return Get-FileHash -LiteralPath $Path -Algorithm SHA256.Hash.ToUpperInvariant()
 }
 
 function Unblock-IfPossible {

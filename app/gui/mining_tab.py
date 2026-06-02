@@ -1924,10 +1924,10 @@ class MiningTab(BackgroundTaskMixin, QWidget):
         if not details:
             return material
 
-        return (
+        return 
             f"{material}\n"
             f"{details['density']} | {details['yield']} | {details['time']}"
-        )
+        
 
     def select_refinery_material(self, material):
         for row in range(self.refinery_table.rowCount()):

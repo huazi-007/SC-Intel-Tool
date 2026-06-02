@@ -125,7 +125,7 @@ def version_key(value):
 
     release_rank = 0 if suffix else 1
     suffix_rank = prerelease_rank(suffix)
-    return (*numbers[:3], release_rank, suffix_rank)
+    return *numbers[:3], release_rank, suffix_rank
 
 
 def prerelease_rank(suffix):

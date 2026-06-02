@@ -715,7 +715,7 @@ class ItemFinderTab(BackgroundTaskMixin, QWidget):
                     availability_item.setText(availability)
 
     def finder_item_key(self, item):
-        return (item.source, item.item_id)
+        return item.source, item.item_id
 
     def location_count_text(self, location_count):
         return f"{location_count} location{'s' if location_count != 1 else ''}"
